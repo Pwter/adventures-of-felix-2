@@ -1,5 +1,7 @@
-function Layer(filepath,arr,tilex,tiley,entitylayer=false)
+function Layer(filepath,arr,tilex,tiley,entitylayer)
 {	
+	if (typeof(entitylayer)==='undefined') entitylayer=false;
+
 	var _layerCanvas = document.createElement("canvas");
 	_layerCanvas.width = tilex*32;
 	_layerCanvas.height = tiley*32;

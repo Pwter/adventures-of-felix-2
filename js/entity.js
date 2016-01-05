@@ -1,5 +1,8 @@
-function Entity(filepath, posx, posy, width=0, height=0)
+function Entity(filepath, posx, posy, width, height)
 {
+	if (typeof(width)==='undefined') width=0;
+	if (typeof(height)==='undefined') height = 0;
+	
 	var _id = entities.length;
 	var _posx = posx;
 	var _posy = posy;

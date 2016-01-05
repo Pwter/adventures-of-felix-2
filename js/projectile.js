@@ -1,5 +1,7 @@
-function Projectile(ownerid,posx,posy,alpharad,speed,type=0)
+function Projectile(ownerid,posx,posy,alpharad,speed,type)
 {
+	if (typeof(type)==='undefined') type=0;
+	
 	var _posx = posx;
 	var _posy = posy;
 	
